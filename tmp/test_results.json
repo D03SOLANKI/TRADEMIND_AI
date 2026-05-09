@@ -1,0 +1,71 @@
+{
+  "XGBoost": {
+    "ok": true,
+    "metrics": {
+      "Accuracy": 0.5455,
+      "Precision": 0.5429,
+      "Recall": 0.8261,
+      "F1": 0.6552,
+      "ROC-AUC": 0.5445
+    },
+    "model_name": "XGBoost"
+  },
+  "LSTM": {
+    "ok": true,
+    "metrics": {
+      "RMSE (norm)": 0.0246,
+      "MAE (norm)": 0.0192,
+      "MAPE (%)": 2.01,
+      "SMAPE (%)": 2.0
+    },
+    "model_name": "LSTM"
+  },
+  "ARIMA": {
+    "ok": true,
+    "metrics": {
+      "RMSE (norm)": 0.0174,
+      "MAE (norm)": 0.0138,
+      "MAPE (%)": 1.45,
+      "SMAPE (%)": 1.45
+    },
+    "model_name": "ARIMA"
+  },
+  "Prophet": {
+    "ok": true,
+    "metrics": {
+      "RMSE (norm)": 0.0147,
+      "MAE (norm)": 0.0123,
+      "MAPE (%)": 1.29,
+      "SMAPE (%)": 1.29
+    },
+    "model_name": "Prophet"
+  },
+  "Ensemble": {
+    "ok": true,
+    "metrics": {
+      "MAPE (%)": 1.5833333333333333,
+      "F1": 0.6552,
+      "SMAPE (%)": 1.58,
+      "MAE (norm)": 0.0151,
+      "ROC-AUC": 0.5445,
+      "RMSE (norm)": 0.0189,
+      "Precision": 0.5429,
+      "Accuracy": 0.5455,
+      "Recall": 0.8261
+    }
+  },
+  "EnsembleWeighted": {
+    "ok": true,
+    "metrics": {
+      "MAPE (%)": 1.5287704133264528,
+      "F1": 0.6552,
+      "SMAPE (%)": 1.5262351386121178,
+      "MAE (norm)": 0.01457650174565052,
+      "ROC-AUC": 0.5445,
+      "RMSE (norm)": 0.0181588139141585,
+      "Precision": 0.5429,
+      "Accuracy": 0.5455,
+      "Recall": 0.8261
+    }
+  }
+}

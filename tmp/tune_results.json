@@ -1,0 +1,30 @@
+{
+  "XGBoost": {
+    "best_params": {
+      "clf__max_iter": 50
+    },
+    "cv_best_score": 0.9727272727272728
+  },
+  "LSTM": {
+    "best_config": {
+      "units": 16,
+      "dropout": 0.2,
+      "batch_size": 32,
+      "loss": 0.003672808175906539
+    }
+  },
+  "Prophet": {
+    "score": 0.0937,
+    "config": {
+      "changepoint_prior_scale": 0.05,
+      "seasonality_mode": "multiplicative",
+      "weekly_seasonality": false,
+      "yearly_seasonality": true
+    },
+    "metrics": {
+      "RMSE (norm)": 0.0937,
+      "MAE (norm)": 0.0817,
+      "MAPE (%)": 4.14
+    }
+  }
+}

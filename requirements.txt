@@ -1,0 +1,30 @@
+# TradeMind AI v3 — Requirements
+# pip install -r requirements.txt
+
+# ── Core ──────────────────────────────────────────────
+streamlit>=1.35.0
+pandas>=2.0.0
+numpy>=1.26.0
+plotly>=5.20.0
+yfinance>=0.2.40
+
+# ── ML / Stats ────────────────────────────────────────
+scikit-learn>=1.4.0
+statsmodels>=0.14.0
+pmdarima>=2.0.4
+
+# ── NLP ───────────────────────────────────────────────
+textblob>=0.18.0
+
+# ── Optional: Prophet ─────────────────────────────────
+# pip install prophet
+
+# ── Optional: LSTM (TensorFlow) ───────────────────────
+# pip install tensorflow-cpu     # CPU-only (recommended for most users)
+# pip install tensorflow         # GPU version
+
+# ── Optional: XGBoost ──────────────────────────────────
+# pip install xgboost
+
+# ── Optional: Alerts ──────────────────────────────────
+requests>=2.31.0

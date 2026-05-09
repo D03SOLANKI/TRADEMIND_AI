@@ -1,0 +1,73 @@
+"""TradeMind AI v3 — Central Configuration"""
+
+CRYPTO = [
+    "BTC-USD","ETH-USD","BNB-USD","SOL-USD","XRP-USD",
+    "DOGE-USD","ADA-USD","AVAX-USD","DOT-USD","MATIC-USD",
+    "LTC-USD","LINK-USD","UNI-USD","ATOM-USD","XLM-USD",
+    "ALGO-USD","FIL-USD","VET-USD","NEAR-USD","SAND-USD",
+]
+
+US_STOCKS = [
+    "AAPL","MSFT","GOOGL","AMZN","NVDA","META","TSLA","BRK-B","LLY","JPM",
+    "V","UNH","XOM","JNJ","PG","MA","AVGO","HD","CVX","MRK",
+    "ABBV","COST","NFLX","AMD","INTC",
+]
+
+NIFTY_50 = [
+    "RELIANCE.NS","TCS.NS","HDFCBANK.NS","INFY.NS","ICICIBANK.NS",
+    "HINDUNILVR.NS","ITC.NS","SBIN.NS","BHARTIARTL.NS","KOTAKBANK.NS",
+    "LT.NS","AXISBANK.NS","ASIANPAINT.NS","MARUTI.NS","SUNPHARMA.NS",
+    "TITAN.NS","ULTRACEMCO.NS","BAJFINANCE.NS","WIPRO.NS","HCLTECH.NS",
+    "POWERGRID.NS","NTPC.NS","ONGC.NS","TATAMOTORS.NS","JSWSTEEL.NS",
+    "TATASTEEL.NS","ADANIENT.NS","ADANIPORTS.NS","COALINDIA.NS","TECHM.NS",
+    "NESTLEIND.NS","DRREDDY.NS","CIPLA.NS","DIVISLAB.NS","EICHERMOT.NS",
+    "BPCL.NS","HEROMOTOCO.NS","BRITANNIA.NS","APOLLOHOSP.NS","TATACONSUM.NS",
+    "BAJAJFINSV.NS","BAJAJ-AUTO.NS","SBILIFE.NS","HDFCLIFE.NS","HINDALCO.NS",
+    "GRASIM.NS","M&M.NS","INDUSINDBK.NS","UPL.NS","SHREECEM.NS",
+]
+
+FOREX = [
+    "EURUSD=X","GBPUSD=X","USDJPY=X","USDINR=X","AUDUSD=X",
+    "USDCAD=X","USDCHF=X","NZDUSD=X","EURGBP=X","EURJPY=X",
+    "GBPJPY=X","USDHKD=X","USDSGD=X","USDMXN=X","USDZAR=X",
+]
+
+MARKETS = {
+    "🪙 Crypto":        CRYPTO,
+    "📈 US Stocks":     US_STOCKS,
+    "🇮🇳 Nifty 50":   NIFTY_50,
+    "💱 Forex":         FOREX,
+}
+
+PERIODS   = ["3mo","6mo","1y","2y","5y"]
+INTERVALS = ["1d","1h","30m"]
+
+# Indicator params
+RSI_PERIOD   = 14
+MACD_FAST    = 12; MACD_SLOW = 26; MACD_SIG = 9
+SMA_S        = 7;  SMA_L     = 30
+BB_PERIOD    = 20; BB_STD    = 2
+ATR_PERIOD   = 14
+
+# Model params
+MIN_ARIMA   = 60
+MIN_PROPHET = 60
+MIN_LSTM    = 60
+LOOKBACK    = 10
+EPOCHS      = 10
+LSTM_UNITS  = 16
+
+# Backtest
+COMMISSION = 0.001
+SLIPPAGE   = 0.0005
+
+# Risk
+TRADING_DAYS = 252
+RISK_FREE    = 0.05
+
+def currency(ticker: str) -> str:
+    if ticker.endswith(".NS") or ticker.endswith(".BO"): return "₹"
+    if ticker.endswith("=X"): return ""
+    return "$"
+ENABLE_LSTM = True
+ENABLE_PROPHET = True
