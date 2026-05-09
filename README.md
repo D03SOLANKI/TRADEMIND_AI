@@ -124,8 +124,8 @@ TradeMind AI
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/trademind-ai.git
-cd trademind-ai
+git clone https://github.com/your-username/TRADEMIND_AI.git
+cd TRADEMIND_AI
 ```
 
 ## 2️⃣ Install Dependencies
@@ -189,6 +189,3 @@ Always do your own research before investing.
 
 ---
 
-# 👨‍💻 Author
-
-Developed by DEV SOLANKI
